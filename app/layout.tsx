@@ -1,9 +1,8 @@
-import { Nuninton, Nunito } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import './globals.css'
-import { Inter } from 'next/font/google'
 import Navbar from './components/navbar/Navbar'
-
-const inter = Inter({ subsets: ['latin'] })
+import Modal from './components/modals/Modal'
+import ClientOnly from './components/ClientOnly'
 
 export const metadata = {
   title: 'Airbnb',
@@ -16,7 +15,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={font.className}>
-        <Navbar />
+        <ClientOnly>
+          <Navbar />
+          <Modal 
+            isOpen
+            title="Hello World"
+          />
+        </ClientOnly>
         {children}
       </body>
     </html>
