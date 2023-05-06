@@ -3,6 +3,7 @@ import './globals.css'
 import Navbar from './components/navbar/Navbar'
 import Modal from './components/modals/Modal'
 import ClientOnly from './components/ClientOnly'
+import RegisterModal from './components/modals/RegisterModal'
 
 export const metadata = {
   title: 'Airbnb',
@@ -16,11 +17,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={font.className}>
         <ClientOnly>
+          <RegisterModal />
           <Navbar />
-          <Modal 
-            isOpen
-            title="Hello World"
-          />
         </ClientOnly>
         {children}
       </body>
