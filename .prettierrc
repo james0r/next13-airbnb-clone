@@ -3,8 +3,9 @@
   "jsxBracketSameLine": true,
   "printWidth": 80,
   "singleQuote": true,
-  "trailingComma": "all",
+  "trailingComma": "none",
   "tabWidth": 2,
   "useTabs": false,
-  "singleAttributePerLine": true
+  "singleAttributePerLine": true,
+  "semi": false
 }
