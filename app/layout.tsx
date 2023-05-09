@@ -1,7 +1,6 @@
 import { Nunito } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/navbar/Navbar'
-import Modal from './components/modals/Modal'
 import ClientOnly from './components/ClientOnly'
 import RegisterModal from './components/modals/RegisterModal'
 import ToasterProvider from './providers/ToasterProvider'
