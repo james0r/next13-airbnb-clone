@@ -71,14 +71,14 @@ const ListingCard: React.FC<ListingCardProps> = ({
       className="group col-span-1 cursor-pointer">
       <div className="flex w-full flex-col gap-2">
         <div className="aspect-square w-full relative overflow-hidden rounded-xl">
-          <Image 
+          <Image
             fill
             alt="listing"
             src={data.imageSrc}
             className="object-cover h-full w-full group-hover:scale-110 transition"
           />
           <div className="absolute top-3 right-3">
-            <HeartButton 
+            <HeartButton
               listingId={data.id}
               currentUser={currentUser}
             />
@@ -101,7 +101,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
           }
         </div>
         {onAction && actionLabel && (
-          <Button 
+          <Button
             disabled={disabled}
             small
             label={actionLabel}
