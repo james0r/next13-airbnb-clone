@@ -22,7 +22,8 @@ import { usePathname, useSearchParams } from 'next/navigation'
 export const categories = [
   {
     label: 'Beach',
-    icon: TbBeach
+    icon: TbBeach,
+    description: 'This property is near a beach!'
   },
   {
     label: 'Windmills',
@@ -47,7 +48,7 @@ export const categories = [
   {
     label: 'Islands',
     icon: GiIsland,
-    decription: 'This property is on an island!'
+    description: 'This property is on an island!'
   },
   {
     label: 'Lake',
