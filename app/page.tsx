@@ -9,7 +9,7 @@ import ListingCard from './components/listings/ListingCard'
 interface HomeProps {
   searchParams: IListingsParams
 }
- 
+
 const Home = async ({
   searchParams
 }: HomeProps) => {
